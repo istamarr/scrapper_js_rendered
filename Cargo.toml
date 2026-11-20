@@ -1,0 +1,16 @@
+[package]
+name = "scrapper_js_rendered"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+headless_chrome = "1.0.14" 
+# Check crates.io for the latest version
+scraper = "0.25"          
+# For parsing the rendered HTML with CSS selectors
+tokio = { version = "1", features = ["full"] }
+chromiumoxide = { version = "0.5", features = ["tokio-runtime"] }
+futures = "0.3"
+sitescraper = "0.2.1"
+anyhow = "1.0.104"
+#headless_chrome = "1.0"
